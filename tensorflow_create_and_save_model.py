@@ -38,6 +38,7 @@ def initial_function():
 
     model.save('epic_num_reader.model')
 
+#,a
 
 if __name__ == "__main__":
     initial_function()
