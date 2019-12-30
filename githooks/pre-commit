@@ -1,0 +1,10 @@
+./run_tests.sh
+RESULT=$?
+
+if [ $RESULT -ne 0 ]; then
+echo "Unable to commit due to failing tests!"
+exit 1
+fi
+
+git-diff-lint -x flake8 -b master
+git-diff-lint -x pylint -b master
