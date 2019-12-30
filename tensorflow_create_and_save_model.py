@@ -22,7 +22,7 @@ def initial_function():
     """
     mnist = tf.keras.datasets.mnist
     (xtrain, ytrain), (_, _) = mnist.load_data()
-    x_train = tf.keras.utils.normalize(xtrain, axis=1)
+    x_train=tf.keras.utils.normalize(xtrain, axis=1)
     model = tf.keras.models.Sequential()
 
     model.add(tf.keras.layers.Flatten())
@@ -38,6 +38,5 @@ def initial_function():
 
     model.save('epic_num_reader.model')
 
-# asfjlöd
 if __name__ == "__main__":
     initial_function()
