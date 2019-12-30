@@ -1,4 +1,16 @@
 import tensorflow as tf
+import functools
+
+def test_function(length):
+    """
+
+    :return: array of ones
+    """
+    if not isinstance(int, length):
+        print("not a proper lenght")
+        return []
+    return [p for p in range(length)]
+
 
 mnist = tf.keras.datasets.mnist
 (xtrain, ytrain), (xtest, ytest) = mnist.load_data()
