@@ -1,6 +1,7 @@
 import tensorflow as tf
 import functools
 
+
 def test_function(length):
     """
 
